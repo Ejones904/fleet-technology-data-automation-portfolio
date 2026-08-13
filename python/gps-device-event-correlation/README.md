@@ -1,15 +1,33 @@
 # GPS / Device Event Correlation Analysis
 
-Sanitized reconstruction of a professional troubleshooting analysis used to investigate whether poor GPS-quality events and recurring device loose-connection events showed a measurable relationship.
+This project contains a sanitized reconstruction of Python analysis I developed while troubleshooting enterprise fleet technology systems.
 
-## Workflow
+## Purpose
 
-1. Load two event datasets with pandas.
-2. Compare event counts using SciPy's Pearson correlation.
-3. Visualize the relationship with a scatter plot.
+The analysis was used to investigate whether there was a measurable relationship between recurring poor GPS-quality events and device loose-connection events.
 
-The included Excel files contain fully synthetic demonstration data. They are not production records.
+The underlying event datasets were generated through separate SQL-based troubleshooting analyses.
 
-## Public-release changes
+## Technical Approach
 
-Personal workstation paths were replaced with relative project paths. Production data is not included. The analytical method and visible code structure were retained.
+The Python analysis:
+
+- Loaded GPS-quality and loose-connection event data using pandas
+- Compared the two event datasets
+- Calculated a Pearson correlation coefficient using SciPy
+- Created a scatter plot using Matplotlib to visualize the relationship
+
+## Technologies
+
+- Python
+- pandas
+- SciPy
+- Matplotlib
+- NumPy
+- Excel-based data analysis
+
+## Confidentiality
+
+The original production datasets are intentionally excluded from this repository.
+
+Personal workstation paths and other environment-specific information have been removed from the public version. The analytical method and core code structure have been retained to represent the technical work performed.
